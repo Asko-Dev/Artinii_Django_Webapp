@@ -25,7 +25,7 @@ SECRET_KEY = 'iqcz6of=arswfo@v)1(@_@r*3r78gz)ofi%27(j!n11(5g_gg3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['artiniiapp.herokuapp.com']
 
 
 # Application definition
