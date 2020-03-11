@@ -25,15 +25,15 @@ class AmateurCompetition(models.Model):
     def __str__(self):
         return f'{self.title} by {self.user.username}'
 
-    def save(self):
-        img = Image.open(self.poster.path)
-
-        if img.height > 300 or img.width > 300:
-            output_size = (300, 300)
-            img.thumbnail(output_size)
-            img.save(self.poster.path)
-
-        super().save()
+    # def save(self):
+    #     img = Image.open(self.poster.path)
+    #
+    #     if img.height > 300 or img.width > 300:
+    #         output_size = (300, 300)
+    #         img.thumbnail(output_size)
+    #         img.save(self.poster.path)
+    #
+    #     super().save()
 
     def get_absolute_url(self):
         return reverse('competition-detail', kwargs={'pk': self.pk})

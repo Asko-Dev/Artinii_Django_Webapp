@@ -11,9 +11,9 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
-
-        im = get_thumbnail(self.image.path, '300x300', crop='center', quality=99)
-        img = Image.open(im)
-        img.save(self.image.path)
+    # def save(self, *args, **kwargs):
+    #     super().save(*args, **kwargs)
+    #
+    #     im = get_thumbnail(self.image.path, '300x300', crop='center', quality=99)
+    #     img = Image.open(im)
+    #     img.save(self.image.path)
