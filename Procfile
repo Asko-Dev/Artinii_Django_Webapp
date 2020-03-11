@@ -1,1 +1,1 @@
-web:gunicorn artinii.wsgi
+web: gunicorn artinii.wsgi
