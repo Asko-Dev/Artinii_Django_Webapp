@@ -3,9 +3,9 @@
 - User Registration/ Login/ Logout/ Password reset
 - User Profile created on registration
 - User Profile Update (including pictures)
-- User create and update a blog post
-- User create a competition submission (form submit)
-- User display "My Artinii" do see User posts and competition submission
+- User Create and Update/Delete a Blog post
+- User Create a competition submission (Form submit)
+- User Display "My Artinii" tab to see User posts and Competition submissions
 - Blog with posts
     - See all posts from all users
     - Click on a User name to see all their posts
