@@ -23,8 +23,8 @@ from competition import views as competition_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('amateur_competition/', competition_views.CompetitionCreateView.as_view(), name='amateur-competition'),
-    path('amateur_competition/<int:pk>/', competition_views.CompetitionDetailViewUser.as_view(), name='competition-detail'),
+    path('amateur-competition/', competition_views.CompetitionCreateView.as_view(), name='amateur-competition'),
+    path('submitted-movies/<int:pk>/', competition_views.CompetitionDetailViewUser.as_view(), name='competition-detail'),
     path('register/', user_views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
